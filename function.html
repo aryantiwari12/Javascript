@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* function show()
+        {
+            document.write("Hello aryan");
+        } 
+        
+        function add(a,b)
+        {
+            //document.write(a+b);
+            alert(a);
+            alert(b);
+            alert(a+b);
+        }
+        */
+           function adddata(a,b)
+           {
+               return a+b;
+           }
+           function showdata(a,b)
+           {
+               var x=adddata(a,b)
+               alert("total value is ="+x);
+           }
+    </script>
+</head>
+<body>
+    <!-- <input type="button" value="show" onclick="show()"> -->
+    <!-- <input type="button" value="add" onclick="add(45,78)"> -->
+    <input type="button" value="add" onclick="showdata(45,78)">
+</body>
+</html>
