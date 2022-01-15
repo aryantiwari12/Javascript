@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validation()
+        {
+            var n=document.getElementById('uname').value;
+            var pass=document.getElementById('pass').value;
+            if(n==null || n=="")
+            {
+                alert("Plz enter a name");
+                return false;
+    
+            }
+            if(n==null || n=="")
+            {
+                alert("pLZ enter a password");
+                return false;
+            }
+            if(pass.length<6)
+            {
+                alert("plz enter a write password");
+                return false;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" onsubmit="return validation()">
+        Name:<input type="text" id="uname"><br>
+        Password:<input type="password" id="pass"><br>
+        <input type="submit" value="save" name=" ">
+    </form>
+</body>
+</html>
