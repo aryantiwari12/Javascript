@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function confirm()
+       {
+            var pass=document.getElementById('pass').value;
+        var seco=document.getElementById('second').value;
+        if(pass==seco)
+        {
+            alert("it's correct password");
+            return true;
+        }
+        else
+        {
+            alert("its not correct");
+            return false;
+        }
+       }
+    </script>
+</head>
+<body>
+      <form  onsubmit="return confirm()">
+          PASSWORD:<input type="password" id="pass" value="">
+          Retype:<input type="password" id="second" value="">
+          <input type="submit" value="save" name="">
+      </form>
+</body>
+</html>
